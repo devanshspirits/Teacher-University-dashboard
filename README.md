@@ -1,2 +1,184 @@
 # Teacher-University-dashboard
 Teacher &amp; University dashboard login page
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teacher-login page</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+         * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif
+    }
+     body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f4f4f4;
+    }
+ .container {
+       display: flex;
+      width: 90%;
+      max-width: 1100px;
+      height: 90vh;
+      background: #fff;
+      border-radius: 15px;
+
+    }
+    .left-side,  .right-side{
+        flex: 1;
+       padding:40px; 
+    }
+    .left-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left-side h2{
+        font-size: 22px;
+      margin-bottom: 10px;
+    }
+    .left-side p{
+        font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .left-side p a{
+        text-decoration: none;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    .input-box {
+      width: 100%;
+      padding: 12px 20px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      font-size: 14px;
+    }
+     .remember-me{
+         display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 20px;
+
+     }
+
+     .remember-me input{
+        margin-right: 10px;
+        border-radius: 50%
+     }
+     .remember-me a{
+        text-decoration: none;
+        color: #474d58;
+     }
+     .btn {
+     background:#C8D6F1;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .or-text {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 20px;
+    }
+.right-side{
+    background:#C8D6F1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+
+}
+.NavBar{
+    display: flex;
+      justify-content: flex-end;
+      gap: 45px;
+      font-size: 14px;
+        margin-bottom: 20px;
+      width: 100%;
+}
+.NavBar span a{
+    text-decoration: none;
+    color: slategray;
+}
+.NavBar span i{
+    color: slategray;
+}
+.Teacher-image{
+     display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+}
+.Teacher-image img{
+       width: 100%;
+      max-width: 400px;
+}
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+      }
+      .right-side{
+        align-items: center;
+      }
+    }
+    </style>
+  </head>
+
+  <body>
+  
+    <div class="container">
+      <div class="left-side">
+        <h2>WELCOME BACK!</h2>
+        <p>Don't have and account? <a href="#">Sign up</a></p>
+       <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="TeacherEmail" class="input-box" placeholder="EX:agrione123@gmail.com" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="TeacherPassword" class="input-box" placeholder="Password" />
+      </div>
+        <div class="remember-me">
+          <label><input type="checkbox" />Remember me</label>
+          <a href="#">Forget password?</a>
+        </div>
+        <button class="btn">Sign In</button>
+        <div class="or-text">OR</div>
+        <button class="btn">Sign up</button>
+      </div>
+      <div class="right-side">
+    <div class="NavBar">
+     <span><a href="#">Help</a></span>
+     <span><a href="#">Contact us</a></span>
+     <span><a href="#">English</a></span>
+     <span><a href="#">Sign up</a></span>
+     <span><i class="fas fa-home" title="Font Awesome"></i></span>
+   </div>
+        <div class="Teacher-image">
+          <img src="../images/teacher.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
